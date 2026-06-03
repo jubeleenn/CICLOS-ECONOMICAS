@@ -2,7 +2,7 @@
    Variables de Diseño (Identidad CICLOS)
 ========================================= */
 :root {
-    --blue-primary: #1a5b8f;   
+    --blue-primary: #1e6292;   
     --blue-dark: #012662;      
     --blue-light: #eef5fb;
     --orange-accent: #ee8001;  
@@ -72,7 +72,7 @@ a:hover {
     object-fit: contain;
 }
 
-/* Enlaces y Efecto Hover Fluido (UI limpia con Inter) */
+/* Enlaces y Efecto Hover Fluido */
 .top-nav {
     display: flex;
     gap: 1.8rem;
@@ -81,7 +81,7 @@ a:hover {
 
 .top-nav a {
     color: #e2e8f0;
-    font-family: var(--font-ui); /* Menús legibles y limpios */
+    font-family: var(--font-ui);
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -268,13 +268,13 @@ blockquote {
    Pie de página de 3 Columnas Fijas (Grid)
 ========================================= */
 .site-footer {
-    background-color: var(--blue-dark); 
+    background-color: var(--blue-primary); 
     color: #cbd5e1;
     padding: 3rem 0;
     font-family: var(--font-ui);
     font-size: 0.8rem;
     margin-top: 6rem;
-    border-top: 5px solid var(--blue-primary);
+    border-top: 5px solid var(--blue-dark);
 }
 
 .footer-inner {
@@ -382,3 +382,5 @@ blockquote {
         font-size: 1.9rem;
     }
 }
+
+```
