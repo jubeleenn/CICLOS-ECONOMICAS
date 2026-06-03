@@ -1,0 +1,342 @@
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evita que el overlay de Hypothesis bloquee los enlaces en ojs */
+hypothesis-sidebar,
+hypothesis-notebook {
+  pointer-events: none !important;
+}
+
+body {
+    font-family: garamond, sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    background: #f7f9fc;
+    padding: 40px;
+}
+
+.header {
+    padding: 0.6rem;
+    background: #ee8001fb;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 5px #5a574e;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.header a h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-shadow: #5a574e 1px 1px 5px;
+}
+
+.header a h1:hover {
+    color: rgb(3, 53, 233);
+    text-decoration: underline;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    color: #012662;
+    -webkit-text-stroke: #0e0d0d 0.5px;
+}
+
+.header .info{
+    color: #e8e6e2;
+    display: flex;
+    flex-direction: column;
+}
+
+.header nav a {
+    margin: 1rem;
+    text-decoration: underline;
+    color: #f3f2f1;
+}
+
+.header nav a:hover {
+    color: rgb(3, 53, 233);
+    text-decoration: underline;
+}
+
+.autor p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+main .autor p a:hover{
+    color: rgb(3, 53, 233);
+    text-decoration: underline;
+}
+
+div .nota{
+  text-align: center;
+}
+
+main {
+    width: 90%;
+    height: auto;
+    background-color: rgba(230, 230, 225, 0.932);
+    margin: 0.2rem auto;
+    padding: 3rem;
+    border-left: 2px solid #706f6fbb;
+}
+
+/* Evita que las referencias se salgan del contenedor */
+main .referencias {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.titulo{
+    text-align: center;
+}
+
+p.autor{
+    text-align: right;
+}
+
+.Ecua{
+    text-align: center;
+}
+
+main p{
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.tab{
+    text-indent: 2rem;
+}
+
+.declaracion{
+    font-size: 0.9rem;
+    padding: 1.9rem;
+}
+
+.supI{
+    color: #fa9002;
+}
+
+.label{
+    color: #fa9005;
+}
+
+.notas{
+    font-size: 0.9rem;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #ee8001fb;
+    color: #fff;
+    box-shadow: 0 -2px 5px #5a574e;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+figure {
+  text-align: center;
+}
+
+/* Imagenes de figuras del articulo */
+.figura {
+  width: min(700px, 100%);
+  height: auto;
+}
+
+thead {
+  background: #f9f9f9;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 0.4rem;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+th:first-child {
+  font-style: italic;
+}
+
+figcaption {
+  font-size: 0.87rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.titulo-tabla {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 0.93rem;
+}
+
+.pie_graf {
+  text-align: center;
+}
+
+.fuente {
+  text-align: center;
+  margin-top: 0.4rem;
+  font-size: 0.87rem;
+}
+
+.footer{
+    position: relative;
+}
+
+.footer .mailito, a{
+    text-decoration: none;
+    text-align: left;
+    color: #0c0a0a;
+}
+
+.footer .logo img {
+    border: rgb(250, 192, 3) 2px solid;
+    border-radius: 5px;
+    background: white;
+    padding: 0.2rem;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    bottom: 5rem;
+    right: 0.9rem;
+}
+
+.footer .iconos{
+    font-size: 1rem;
+    display: flex;
+    justify-content: right;
+    gap: 1em;
+    position: absolute;
+    bottom: 3rem;
+    right: 0.9rem;
+}
+
+p sub {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  text-decoration: none !important;
+}
+
+.iconos i:hover{
+    color: rgb(3, 53, 233);
+    text-shadow: white 1px 1px 10px;
+}
+
+/* Estilos para imágenes responsivas */
+.responsive-image {
+  text-align: center;
+  margin: 1em auto;
+  max-width: 100%;
+}
+
+.responsive-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.responsive-image figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Estilos para tablas responsivas */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  /* Evita que las imágenes desborden su contenedor en móviles */
+  max-width: 100%;
+  /* Mantiene proporciones originales */
+  height: auto;
+}
+
+main img {
+  /* Centra imágenes dentro del contenido principal */
+  display: block;
+  /* Separación vertical suave */
+  margin: 0.5rem auto;
+}
+
+header nav.identidad {
+  /* Permite que los enlaces pasen a nuevas líneas en pantallas pequeñas */
+  display: flex;
+  /* Habilita el salto de línea en el nav */
+  flex-wrap: wrap;
+  /* Centra el bloque de enlaces */
+  justify-content: center;
+  /* Espaciado entre enlaces en filas y columnas */
+  gap: 0.5rem 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 300px;
+}
+
+/* ---------- RESPONSIVIDAD ----------*/
+@media (max-width: 768px) {
+  table {font-size: 0.87rem;}
+  th, td {padding: 0.2rem;}
+  header h1 {font-size: 0.9rem;}
+  body {padding: 16px;} /* Reduce el padding general en tablets */
+  main {width: 100%; padding: 1.2rem; font-size: 0.9rem;} /* Usa todo el ancho y mejora la lectura */
+  header h2 {font-size: 0.8rem;}
+  header p, header a {font-size: 0.8rem; margin: 0.3rem 0;}
+  main h2 {font-size: 1rem;} /* Títulos legibles en tablet */
+  main .autor p {font-size: 0.9rem;} /* Datos de autores más legibles */
+  .header nav a {margin: 0; display: inline-block;} /* Evita márgenes grandes en nav */
+  .footer .logo img {position: static; width: 120px; margin-top: 1rem;} /* Evita solaparse en footer */
+  .footer .iconos {position: static; justify-content: flex-start; margin-top: 1rem;} /* Alinea iconos en columna */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width:480px){
+  table {font-size: 0.7rem;}
+  th, td {padding: 0.1rem;}
+
+  header h1 {
+    font-size: 0.7rem;
+  }
+  header p, header a {
+    font-size: 0.7rem;
+    display: block;
+    margin: 0.2rem 0;
+  }
+  main {
+    padding: 0.8rem;
+    font-size: 0.85rem; /* Texto cómodo en pantallas muy pequeñas */
+  }
+  header h2 {
+    font-size: 0.5rem;
+  }
+  main h2{
+    font-size: 0.95rem; /* Títulos claros en móvil */
+  }
+  main .autor p {
+    font-size: 0.85rem; /* Información de autores legible */
+  }
+  .header nav a {width: 100%; text-align: center;} /* Enlaces del nav en columna */
+  .footer .logo img {width: 120px;} /* Logo con tamaño estable */
+}
+
