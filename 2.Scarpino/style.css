@@ -178,7 +178,6 @@ a:hover {
     color: var(--blue-primary) !important;
 }
 
-
 /* =========================================
    Cuerpo del Artículo 
 ========================================= */
@@ -436,4 +435,3 @@ blockquote {
         font-size: 1.9rem;
     }
 }
-
