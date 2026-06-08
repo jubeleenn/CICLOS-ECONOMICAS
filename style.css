@@ -102,13 +102,13 @@ a:hover {
     transition: width 0.25s ease-in-out;
 }
 
-.top-nav a:hover {
+.top-nav a.active-link:hover {
+    cursor: default !important; 
     color: var(--white);
-    text-decoration: none;
 }
 
-.top-nav a:hover::after {
-    width: 100%;
+.top-nav a.active-link:hover::after {
+    width: 100% !important;
 }
 
 .nav-highlight {
@@ -183,7 +183,7 @@ a:hover {
    Cuerpo del Artículo 
 ========================================= */
 .article-wrapper {
-    max-width: 780px; 
+    max-width: 1000px; 
     margin: 4rem auto;
     padding: 0 2rem;
 }
@@ -436,5 +436,3 @@ blockquote {
         font-size: 1.9rem;
     }
 }
-
-```
